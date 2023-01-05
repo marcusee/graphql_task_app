@@ -42,8 +42,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen( 8080 , () => {
-  console.log(`App listening at ${8080}`);
+app.listen( 3000 , () => {
+  console.log(`App listening at ${3000}`);
 });
 
 module.exports = app;

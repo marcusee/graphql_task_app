@@ -1,0 +1,17 @@
+version: '3'
+networks:
+  my-network:
+    driver: bridge
+services:
+  app:
+    build: ./graphql_app
+    networks:
+      - my-network
+    ports:
+      - "3000:3000"
+  web:
+    build: ./svelte_app
+    networks:
+      - my-network
+    ports:
+      - "8080:5173"
